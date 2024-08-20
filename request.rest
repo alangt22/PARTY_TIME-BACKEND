@@ -1,0 +1,100 @@
+POST HTTP://localhost:3000/api/services
+Content-Type: application/json
+
+    {
+      "name": "Decoração",
+      "description": "Escolha a decoração para sua festa, e nós a montamos.",
+      "price": 1400,
+      "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+    }
+
+###
+###getall
+GET http://localhost:3000/api/services
+
+###
+###get id
+GET http://localhost:3000/api/services/66beb6153a0e78bd3d5e08fd
+
+###
+### delete
+DELETE http://localhost:3000/api/services/66beb6153a0e78bd3d5e08fd
+
+###
+### update
+PUT HTTP://localhost:3000/api/services/66bec7b373473ba9a25e2cc8
+Content-Type: application/json
+
+{
+    "name": "TESTE ATUALIZAÇÃO",
+    "description": "Alguma descrição",
+    "price": 2500,
+    "image":"https://cdn-imgix.headout.com/tour/12449/TOUR-IMAGE/d40f6e72-a95b-4043-b85d-e065093828d8-6871-dubai-img-worlds-of-adventure-vip-experience-03.jpg?auto=format&w=713.0666666666667&h=458.4&q=90&ar=14%3A9&crop=faces"
+}
+
+###
+### PARTIE
+### post
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 3",
+    "author": "Alan",
+    "description": "Uma festa de aniversario",
+    "budget": 9000,
+    "image": "https://cdn-imgix.headout.com/tour/12449/TOUR-IMAGE/d40f6e72-a95b-4043-b85d-e065093828d8-6871-dubai-img-worlds-of-adventure-vip-experience-03.jpg?auto=format&w=713.0666666666667&h=458.4&q=90&ar=14%3A9&crop=faces",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição 1",
+            "price": 3000,
+            "image":"https://cdn-imgix.headout.com/tour/12449/TOUR-IMAGE/d40f6e72-a95b-4043-b85d-e065093828d8-6871-dubai-img-worlds-of-adventure-vip-experience-03.jpg?auto=format&w=713.0666666666667&h=458.4&q=90&ar=14%3A9&crop=faces"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição 2",
+            "price": 1400,
+            "image":"https://cdn-imgix.headout.com/tour/12449/TOUR-IMAGE/d40f6e72-a95b-4043-b85d-e065093828d8-6871-dubai-img-worlds-of-adventure-vip-experience-03.jpg?auto=format&w=713.0666666666667&h=458.4&q=90&ar=14%3A9&crop=faces"
+        }
+    ]
+}
+
+###
+### get All
+GET http://localhost:3000/api/parties
+
+###
+### get id
+GET http://localhost:3000/api/parties/66bf2ded9a1b83231888ffe1
+
+###
+### delete
+DELETE http://localhost:3000/api/parties/66bf34991787e63f9b483ee0
+
+###
+### update
+PUT http://localhost:3000/api/parties/66bf34991787e63f9b483ee0
+Content-Type: application/json
+
+{
+    "title": "Meu evento 3",
+    "author": "Alan nunes",
+    "description": "Uma festa de aniversario",
+    "budget": 1000,
+    "image": "https://cdn-imgix.headout.com/tour/12449/TOUR-IMAGE/d40f6e72-a95b-4043-b85d-e065093828d8-6871-dubai-img-worlds-of-adventure-vip-experience-03.jpg?auto=format&w=713.0666666666667&h=458.4&q=90&ar=14%3A9&crop=faces",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição 1",
+            "price": 3000,
+            "image":"https://cdn-imgix.headout.com/tour/12449/TOUR-IMAGE/d40f6e72-a95b-4043-b85d-e065093828d8-6871-dubai-img-worlds-of-adventure-vip-experience-03.jpg?auto=format&w=713.0666666666667&h=458.4&q=90&ar=14%3A9&crop=faces"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição 2",
+            "price": 1400,
+            "image":"https://cdn-imgix.headout.com/tour/12449/TOUR-IMAGE/d40f6e72-a95b-4043-b85d-e065093828d8-6871-dubai-img-worlds-of-adventure-vip-experience-03.jpg?auto=format&w=713.0666666666667&h=458.4&q=90&ar=14%3A9&crop=faces"
+        }
+    ]
+}
